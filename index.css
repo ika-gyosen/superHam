@@ -1,0 +1,40 @@
+.ham {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  width: 300px;
+  border: 1px black solid;
+}
+
+.bar {
+  background-color: black;
+  width: 300px;
+  height: 40px;
+}
+
+.ham:hover #bar1 {
+  transform: rotate(45deg);
+  width: 367.64px;
+  transition: 350ms;
+}
+
+.ham:hover #bar3 {
+  transform: rotate(-45deg);
+  width: 367.64px;
+  transition: 350ms;
+}
+
+.ham:hover #bar2 {
+  opacity: 0;
+  transition: 350ms;
+}
+
+.ham #bar1 {
+  transform-origin: center left;
+}
+
+.ham #bar3 {
+  transform-origin: center left;
+}
